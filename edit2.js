@@ -206,7 +206,6 @@ async function saveElements(){
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*', 
             },
             body: JSON.stringify(requestData),
         })
