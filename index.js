@@ -135,6 +135,8 @@ function displayJobs(jobs) {
 }
 getJobs();
 
+
+
 // Event-Listener für die Selectbox 
 var filterSelect = document.getElementById("selectbox");
 filterSelect.addEventListener("change", function () {
