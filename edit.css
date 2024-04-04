@@ -6,11 +6,14 @@ body{
     justify-content: center;
 }
 h1{
-    color:rgb(0, 0, 0);    
-    font-family: 'Times New Roman', Times, serif;
+    color:rgb(220, 220, 220); 
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    font-size: 30px;
-    text-decoration: underline 2px;
+    font-size: 37px;
+    justify-content:left;
+    text-shadow: 0px 2px 3px #707070;
+    -webkit-text-stroke: 1px black;
+    font-size: 32px;
     margin-bottom: 55px;
     margin-top: 5px;
     letter-spacing: 0.5px;
@@ -125,8 +128,10 @@ input[type="checkbox"]{
     background-color: #f3f3f3;
     border-radius: 5px;
     padding: 40px;
-    margin-top: 20px;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .idValue{
     position: absolute;
@@ -182,9 +187,7 @@ p{
 }
 .inputsName input[type="checkbox"]{
     margin-right: 25px;
-}
-.inputsName input{
-    margin-right: 110px;
+    margin-left: 35px;
 }
 .inputsName p{
     margin-right: 120px;
@@ -203,4 +206,25 @@ p{
 .inputStatus{
     position: absolute;
     left: 613px; /* Anpassen des Abstands nach Bedarf */
+}
+.flexInterval{
+    display: flex;
+    flex-direction: column;
+}
+.labelsInterval{
+    display: flex;
+    flex-direction: row; /* Setze die Ausrichtung der Labels und Inputs auf Reihen */
+    margin-bottom: 10px; /* Füge Platz zwischen den Zeilen hinzu */
+}
+.labelsInterval label{
+    margin-right: 218px;
+}
+.inputsInterval{
+    display: flex;
+    flex-direction: row; /* Setze die Ausrichtung der Labels und Inputs auf Reihen */
+    margin-bottom: 10px; /* Füge Platz zwischen den Zeilen hinzu */
+}
+.inputsInterval input{
+    margin-right: 50px;
+    margin-top: 5px;
 }
